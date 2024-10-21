@@ -18,3 +18,18 @@ $('.newArrival-slide').slick({
     nextArrow: '<button class="heroSlideNext"><i class="fa-solid fa-chevron-right"></i></button>',
     dots: true
 });
+
+
+// Counter js for every .counter element
+
+$('.counter').each(function () {
+    $(this).prop('Counter', 0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});

@@ -1,22 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul,ol{
+
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
     display: inline-block;
 }
-h1,h2,h3,h4,h5,h6,p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -27,14 +39,16 @@ body {
     --brand-color: #ef712f;
     --bg-color: #efefef;
 }
-.secn-title{
+
+.secn-title {
     color: var(--primary-color);
     font-size: 40px;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
 }
-.secn-title::after{
+
+.secn-title::after {
     content: "";
     display: block;
     width: 110px;
@@ -42,41 +56,46 @@ body {
     background-color: var(--secondary-color);
     margin: 10px auto;
 }
+
 /* ============ Common Css End ================ */
 
 /* ============ Header Css Start ================ */
-.header_top{
+.header_top {
     padding: 20px 0;
     background-color: var(--bg-color);
 }
-.header_contact{
+
+.header_contact {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.header_contact li a{
+.header_contact li a {
     color: var(--secondary-color);
     font-size: 14px;
 }
-.header_flex{
+
+.header_flex {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 20px;
 }
-.header_top_menu{
+
+.header_top_menu {
     position: relative;
     cursor: pointer;
 }
-.header_top_menu p{
+
+.header_top_menu p {
     color: var(--primary-color);
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.header_top_menu ul{
+.header_top_menu ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -91,55 +110,66 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
+    z-index: 999;
 }
-.header_top_menu:hover ul{
+
+.header_top_menu:hover ul {
     opacity: 1;
     visibility: visible;
 }
-.header_top_menu ul li a{
+
+.header_top_menu ul li a {
     color: var(--secondary-color);
     font-size: 14px;
 }
-.header_top_menu ul li a:hover{
-  color: var(--primary-color);
-  font-weight: 500;
+
+.header_top_menu ul li a:hover {
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
-.social-icons ul{
+.social-icons ul {
     display: flex;
     gap: 10px;
 }
-.social-icons a{
+
+.social-icons a {
     width: 16px;
     height: 16px;
 }
-.main_menu ul{
+
+.main_menu ul {
     gap: 10px;
 }
-.main_menu ul li a{
+
+.main_menu ul li a {
     color: var(--primary-color) !important;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
 }
-.main_menu ul li a svg{
+
+.main_menu ul li a svg {
     margin-right: 8px;
 }
 
 /* Language toggle switch */
 .switch {
     --_switch-bg-clr: #efefef;
-    --_switch-padding: 4px; /* padding around button*/
-    --_slider-bg-clr: #ef712f; /* slider color unchecked */
-    --_slider-bg-clr-on: #ef712f; /* slider color checked */
+    --_switch-padding: 4px;
+    /* padding around button*/
+    --_slider-bg-clr: #ef712f;
+    /* slider color unchecked */
+    --_slider-bg-clr-on: #ef712f;
+    /* slider color checked */
     --_slider-txt-clr: #ffffff;
-    --_label-padding: 10px 10px; /* padding around the labels -  this gives the switch it's global width and height */
-    --_switch-easing: cubic-bezier(
-      0.47,
-      1.64,
-      0.41,
-      0.8
-    ); /* easing on toggle switch */
+    --_label-padding: 10px 10px;
+    /* padding around the labels -  this gives the switch it's global width and height */
+    --_switch-easing: cubic-bezier(0.47,
+            1.64,
+            0.41,
+            0.8);
+    /* easing on toggle switch */
     color: var(--primary-color);
     width: fit-content;
     display: flex;
@@ -151,9 +181,9 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     position: relative;
     isolation: isolate;
-  }
-  
-  .switch input[type="checkbox"] {
+}
+
+.switch input[type="checkbox"] {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -163,77 +193,83 @@ body {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-  }
-  .switch > span {
+}
+
+.switch>span {
     display: grid;
     place-content: center;
     transition: opacity 300ms ease-in-out 150ms;
     padding: var(--_label-padding);
-  }
-  .switch::before,
-  .switch::after {
+}
+
+.switch::before,
+.switch::after {
     content: "";
     position: absolute;
     border-radius: inherit;
     transition: inset 150ms ease-in-out;
-  }
-  /* switch slider */
-  .switch::before {
+}
+
+/* switch slider */
+.switch::before {
     background-color: var(--_slider-bg-clr);
-    inset: var(--_switch-padding) 50% var(--_switch-padding)
-      var(--_switch-padding);
+    inset: var(--_switch-padding) 50% var(--_switch-padding) var(--_switch-padding);
     transition:
-      inset 500ms var(--_switch-easing),
-      background-color 500ms ease-in-out;
+        inset 500ms var(--_switch-easing),
+        background-color 500ms ease-in-out;
     z-index: -1;
     box-shadow:
-      inset 0 1px 1px rgba(0, 0, 0, 0.3),
-      0 1px rgba(255, 255, 255, 0.3);
-  }
-  /* switch bg color */
-  .switch::after {
+        inset 0 1px 1px rgba(0, 0, 0, 0.3),
+        0 1px rgba(255, 255, 255, 0.3);
+}
+
+/* switch bg color */
+.switch::after {
     background-color: var(--_switch-bg-clr);
     inset: 0;
     z-index: -2;
-  }
-  /* switch hover & focus */
-  .switch:focus-within::after {
+}
+
+/* switch hover & focus */
+.switch:focus-within::after {
     inset: -0.25rem;
-  }
-  .switch:has(input:checked):hover > span:first-of-type,
-  .switch:has(input:not(:checked)):hover > span:last-of-type {
+}
+
+.switch:has(input:checked):hover>span:first-of-type,
+.switch:has(input:not(:checked)):hover>span:last-of-type {
     opacity: 1;
     transition-delay: 0ms;
     transition-duration: 100ms;
-  }
-  /* switch hover */
-  .switch:has(input:checked):hover::before {
-    inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding)
-      45%;
-  }
-  .switch:has(input:not(:checked)):hover::before {
-    inset: var(--_switch-padding) 45% var(--_switch-padding)
-      var(--_switch-padding);
-  }
-  /* checked - move slider to right */
-  .switch:has(input:checked)::before {
+}
+
+/* switch hover */
+.switch:has(input:checked):hover::before {
+    inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding) 45%;
+}
+
+.switch:has(input:not(:checked)):hover::before {
+    inset: var(--_switch-padding) 45% var(--_switch-padding) var(--_switch-padding);
+}
+
+/* checked - move slider to right */
+.switch:has(input:checked)::before {
     background-color: var(--_slider-bg-clr-on);
-    inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding)
-      50%;
-  }
-  /* checked - set opacity */
-  .switch > span:last-of-type,
-  .switch > input:checked + span:first-of-type {
+    inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding) 50%;
+}
+
+/* checked - set opacity */
+.switch>span:last-of-type,
+.switch>input:checked+span:first-of-type {
     opacity: 0.75;
-  }
+}
 
-  .switch:has(input:checked) span:last-child{
-   color: white;
-  }
-
-  .switch > input:not(:checked) + span:first-of-type {
+.switch:has(input:checked) span:last-child {
     color: white;
-  }
+}
+
+.switch>input:not(:checked)+span:first-of-type {
+    color: white;
+}
 
 .search-container {
     position: relative;
@@ -244,6 +280,7 @@ body {
 .search-icon {
     cursor: pointer;
 }
+
 .search-input {
     width: 0;
     padding: 4px 10px;
@@ -264,24 +301,28 @@ body {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
 .search-container:hover .search-input {
     width: 250px;
     opacity: 1;
 }
+
 .search-container .search-input:focus,
 .search-container .search-input:not(:placeholder-shown) {
     opacity: 1;
     width: 250px;
 }
+
 /* ============ Header Css End ================ */
 
 /* ============ Banner Css Start ================ */
-#hero_banner{
+#hero_banner {
     background-color: var(--bg-color);
     padding: 20px 0;
 }
+
 .bannerSlide .heroSlidePrev,
-.heroSlideNext{
+.heroSlideNext {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -292,13 +333,16 @@ body {
     border: none;
     background-color: transparent;
 }
-.bannerSlide .heroSlidePrev{
+
+.bannerSlide .heroSlidePrev {
     left: 10px;
 }
-.bannerSlide .heroSlideNext{
+
+.bannerSlide .heroSlideNext {
     right: 10px;
 }
-.bannerSlide .slick-dots{
+
+.bannerSlide .slick-dots {
     display: flex !important;
     gap: 16px;
     font-size: 0;
@@ -307,7 +351,8 @@ body {
     bottom: 10px;
     transform: translateX(-50%);
 }
-.bannerSlide .slick-dots li button{
+
+.bannerSlide .slick-dots li button {
     border: none;
     background-color: white;
     width: 5px;
@@ -315,16 +360,19 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-.bannerSlide .slick-dots .slick-active button{
+
+.bannerSlide .slick-dots .slick-active button {
     background-color: var(--brand-color);
 }
+
 /* ============ Banner Css End ================ */
 /* ============ Cetagory Css Start ================ */
-#cetagory{
+#cetagory {
     padding: 40px 0;
     background-color: white;
 }
-.cetagory-card{
+
+.cetagory-card {
     padding: 20px 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex;
@@ -337,23 +385,30 @@ body {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
 }
-.cetagory-card-title h3{
+
+.cetagory-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cetagory-card-title h3 {
     font-size: 14px;
     font-weight: 600;
     color: var(--secondary-color);
 }
-.cetagory-card-title h3:hover{
+
+.cetagory-card-title h3:hover {
     color: var(--primary-color);
     cursor: pointer;
 }
+
 /* ============ Cetagory Css End ================ */
 /* ============ New Arrival Css Start ================ */
-#new-arrival{
+#new-arrival {
     padding: 50px 0;
     background-color: var(--bg-color);
 }
 
-.newArrival-slide-items{
+.newArrival-slide-items {
     max-height: 300px;
     border-radius: 16px;
     -webkit-border-radius: 16px;
@@ -362,7 +417,8 @@ body {
     -o-border-radius: 16px;
     overflow: hidden;
 }
-.newArrival-slide .slick-dots{
+
+.newArrival-slide .slick-dots {
     display: flex !important;
     gap: 10px;
     font-size: 0;
@@ -371,7 +427,8 @@ body {
     bottom: 10px;
     transform: translateX(-50%);
 }
-.newArrival-slide .slick-dots li button{
+
+.newArrival-slide .slick-dots li button {
     border: 1px solid var(--brand-color);
     background-color: transparent;
     width: 5px;
@@ -379,9 +436,284 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
-.newArrival-slide .slick-dots .slick-active button{
+
+.newArrival-slide .slick-dots .slick-active button {
     background-color: var(--brand-color);
 }
+
 /* ============ New Arrival Css End ================ */
+/* ============ Happy Customer Css Start ================ */
+#happyCustomer {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.happyCustomer-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px 0;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.happyCustomer-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.happyCustomer-card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.happyCustomer-card-btn {
+    background-color: var(--brand-color);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.happyCustomer-card-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* ============ Happy Customer Css End ================ */
+/* ============ Counter Css Start ================ */
+#counter {
+    padding: 50px 0;
+    background-color: var(--bg-color);
+}
+
+.counter-wraper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.counter-card {
+    background-color: var(--brand-color);
+    padding: 60px 0 20px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.counter-card:hover {
+    box-shadow: var(--brand-color) 0px 5px 15px;
+}
+
+.counter-card-img {
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -39px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.counter-card-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.counter-card-details h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter-card-details p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ============ Counter Css End ================ */
+/* ============ Best Buyers & Selles Css Start ================ */
+#best-buyers-seller {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.best-buyers-seller-wraper {
+    margin-top: 25px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 16px;
+}
+
+.best-buyers-seller-wraper img {
+    transition: all 0.4s ease;
+}
+
+.best-buyers-seller-wraper img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* ============ Best Buyers & Selles Css End ================ */
+/* ============ Download App Css Start ================ */
+#download-app {
+    padding: 50px 0;
+    background-color: var(--bg-color);
+}
+
+.download-app-img {
+    padding: 0 20px;
+}
+
+.download-app-title {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.download-app-desc {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 55px 0 60px;
+    text-transform: uppercase;
+}
+
+.download-app-btn {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ============ Download App Css End ================ */
+/* ============ Footer Css Start ================ */
+#footer {
+    padding-top: 50px;
+    background-color: var(--primary-color);
+}
+
+.footer-desc {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.footer-menu-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.footer-menu-title::before {
+    content: "";
+    height: 100%;
+    width: 4px;
+    border-left: 4px solid var(--brand-color);
+    position: absolute;
+    left: -12px;
+    top: 0;
+}
+
+.footer-menu ul {
+    margin-top: 20px;
+}
+
+.footer-menu ul li a,
+.footer-menu ul li p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 6px;
+}
+
+.footer-menu ul li p {
+    flex-direction: column;
+}
+
+.footer-menu ul li a .footer-menu-sub-title,
+.footer-menu ul li p .footer-menu-sub-title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.payment-method-image{
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+.payment-method-image li{
+  width: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#footer .social-icons ul {
+    margin-top: 10px;
+}
+
+#footer .social-icons a {
+    width: 30px;
+    height: 30px;
+}
+.copy-right{
+    padding: 30px 0;
+    background-color: #022343;
+    margin-top: 50px;
+}
+.copy-right p{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.copy-right p span{
+    font-weight: 700;
+}
+/* ============ Footer Css End ================ */
+/* ============ Header Css Start ================ */
+/* ============ Header Css End ================ */
 /* ============ Header Css Start ================ */
 /* ============ Header Css End ================ */
