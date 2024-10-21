@@ -27,7 +27,21 @@ body {
     --brand-color: #ef712f;
     --bg-color: #efefef;
 }
-
+.secn-title{
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+.secn-title::after{
+    content: "";
+    display: block;
+    width: 110px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    margin: 10px auto;
+}
 /* ============ Common Css End ================ */
 
 /* ============ Header Css Start ================ */
@@ -221,19 +235,10 @@ body {
     color: white;
   }
 
-
-
-
-
-
-
-
-
-
-
 .search-container {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .search-icon {
@@ -241,19 +246,142 @@ body {
 }
 .search-input {
     width: 0;
+    padding: 4px 10px;
+    border-radius: 8px;
     transition: width 0.4s ease;
     position: absolute;
-    left: 20px;
+    right: 20px;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
     opacity: 0;
+    -webkit-transition: width 0.4s ease;
+    -moz-transition: width 0.4s ease;
+    -ms-transition: width 0.4s ease;
+    -o-transition: width 0.4s ease;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .search-container:hover .search-input {
-    width: 150px;
+    width: 250px;
     opacity: 1;
+}
+.search-container .search-input:focus,
+.search-container .search-input:not(:placeholder-shown) {
+    opacity: 1;
+    width: 250px;
 }
 /* ============ Header Css End ================ */
 
+/* ============ Banner Css Start ================ */
+#hero_banner{
+    background-color: var(--bg-color);
+    padding: 20px 0;
+}
+.bannerSlide .heroSlidePrev,
+.heroSlideNext{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.bannerSlide .heroSlidePrev{
+    left: 10px;
+}
+.bannerSlide .heroSlideNext{
+    right: 10px;
+}
+.bannerSlide .slick-dots{
+    display: flex !important;
+    gap: 16px;
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+.bannerSlide .slick-dots li button{
+    border: none;
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bannerSlide .slick-dots .slick-active button{
+    background-color: var(--brand-color);
+}
+/* ============ Banner Css End ================ */
+/* ============ Cetagory Css Start ================ */
+#cetagory{
+    padding: 40px 0;
+    background-color: white;
+}
+.cetagory-card{
+    padding: 20px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.cetagory-card-title h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.cetagory-card-title h3:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+/* ============ Cetagory Css End ================ */
+/* ============ New Arrival Css Start ================ */
+#new-arrival{
+    padding: 50px 0;
+    background-color: var(--bg-color);
+}
+
+.newArrival-slide-items{
+    max-height: 300px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    overflow: hidden;
+}
+.newArrival-slide .slick-dots{
+    display: flex !important;
+    gap: 10px;
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+.newArrival-slide .slick-dots li button{
+    border: 1px solid var(--brand-color);
+    background-color: transparent;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.newArrival-slide .slick-dots .slick-active button{
+    background-color: var(--brand-color);
+}
+/* ============ New Arrival Css End ================ */
 /* ============ Header Css Start ================ */
 /* ============ Header Css End ================ */
