@@ -158,7 +158,6 @@
     font-size: 1rem;
 }
 .order-button {
-    border: none;
     width: 100%;
     background-color: var(--primary-color);
     color: white;
@@ -166,6 +165,7 @@
     border-radius: 5px;
     margin-top: 10px;
     font-size: 14px;
+    text-align: center;
 }
 .order-button:hover {
     background-color: #031f49;
