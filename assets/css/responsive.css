@@ -23,6 +23,7 @@
         color: var(--primary-color);
     }
     .main_menu .navbar-nav{
+        width: 100%;
         background-color: var(--bg-color);
         align-items: center;
     }
@@ -159,6 +160,7 @@
         color: var(--primary-color);
     }
     .main_menu .navbar-nav{
+        width: 100%;
         background-color: var(--bg-color);
         align-items: center;
     }
@@ -298,6 +300,7 @@
         color: var(--primary-color);
     }
     .main_menu .navbar-nav{
+        width: 100%;
         background-color: var(--bg-color);
         align-items: center;
     }
