@@ -1,40 +1,139 @@
-@media (max-width: 991px) {
-    .header_top_menu ul {
+@media (max-width: 991.98px) {
+    .secn-title h2{
+        font-size: 26px;
+    }
+    /* Header Css */
+    .header-logo{
+        width: 160px;
+    }
+    .search-container.desktop-view{
+        display: none;
+    }
+    .search-container.mobile-view{
+        display: flex;
+    }
+    .search-container.mobile-view svg{
+        font-size: 20px;
+    }
+    .search-container.mobile-view .search-input{
+      padding: 10px;
+    }
+    .navbar-button{
+        border: none;
+        color: var(--primary-color);
+    }
+    .main_menu .navbar-nav{
+        background-color: var(--bg-color);
+        align-items: center;
+    }
+    /* Banner Css */
+    #hero_banner{
+        padding: 16px 0;
+    }
+    /* Cetagory Css */
+    #cetagory{
+        padding: 25px 0;
+    }
+    .cetagory-card {
+        padding: 15px 5px;
+        gap: 16px;
+        text-align: center;
+        height: 100%;
+        display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        justify-content: center;
     }
-    .header_top_menu li a {
-        font-size: 16px;
+    .cetagory-card-img{
+        padding: 0 26px;
     }
-    .main_menu ul {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-    .main_menu li a {
-        font-size: 16px;
-    }
-    .header_top_menu ul,
-    .main_menu ul {
-        background-color: transparent;
-        box-shadow: none;
-        position: static;
+    .cetagory-card-img img{
         width: 100%;
     }
-    .header_top_menu ul li a,
-    .main_menu ul li a {
-        color: var(--secondary-color);
+    #cetagory .row{
+        row-gap: 15px;
     }
-    .header_top_menu ul li a:hover,
-    .main_menu ul li a:hover {
-        color: var(--primary-color);
+    /* New Arrival Css */
+    #new-arrival{
+        padding: 25px 0;
+    }
+    #new-arrival .row{
+        row-gap: 15px;
+    }
+    /* Happy Customer Css */
+    #happyCustomer{
+        padding: 25px 0;
+    }
+    .happyCustomer-card {
+        padding: 15px 0;
+        gap: 15px;
+        text-align: center;
+        height: 100%;
+    }
+    .happyCustomer-card-img{
+        padding: 0 45px;
+    }
+    .happyCustomer-card-img img{
+        width: 100%;
+    }
+    .happyCustomer-card-title {
+        font-size: 14px;
+    }
+    .happyCustomer-card-btn {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    /* Counter Css */
+    #counter{
+        padding: 25px 0;
+    }
+    .counter-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 10px;
+        margin-top: 30px;
+        justify-content: center;
+
+    }
+    .counter-card {
+        width: 31%;
+        padding: 35px 0 20px;
+    }
+
+    .counter-card-img {
+        width: 42px;
+        height: 42px;
+        top: -21px;
+    }
+    .counter-card-details h3 {
+        font-size: 24px;
+    }
+    .counter-card-details p {
+        font-size: 14px;
+    }
+    /* Download App  */
+    #download-app{
+        padding: 25px 0;
+    }
+    .download-app-title {
+        font-size: 26px;
+        text-align: center;
+    }
+    .download-app-desc {
+        font-size: 12px;
+        margin: 24px 0 24px;
+        text-align: center;
+    }
+    .download-app-btn {
+        width: 156px;
+        gap: 10px;
+        margin: auto;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
     .secn-title h2{
-        font-size: 16px;
+        font-size: 26px;
     }
     /* Header Css */
     #header .header_top{
@@ -65,11 +164,11 @@
     }
     /* Banner Css */
     #hero_banner{
-        padding: 10px 0;
+        padding: 16px 0;
     }
     /* Cetagory Css */
     #cetagory{
-        padding: 15px 0;
+        padding: 25px 0;
     }
     .cetagory-card {
         padding: 15px 5px;
@@ -91,14 +190,14 @@
     }
     /* New Arrival Css */
     #new-arrival{
-        padding: 15px 0;
+        padding: 25px 0;
     }
     #new-arrival .row{
         row-gap: 15px;
     }
     /* Happy Customer Css */
     #happyCustomer{
-        padding: 15px 0;
+        padding: 25px 0;
     }
     .happyCustomer-card {
         padding: 15px 0;
@@ -113,15 +212,15 @@
         width: 100%;
     }
     .happyCustomer-card-title {
-        font-size: 10px;
+        font-size: 14px;
     }
     .happyCustomer-card-btn {
         padding: 10px 10px;
-        font-size: 10px;
+        font-size: 14px;
     }
     /* Counter Css */
     #counter{
-        padding: 15px 0;
+        padding: 25px 0;
     }
     .counter-wraper {
         display: flex;
@@ -132,9 +231,9 @@
         justify-content: center;
 
     }
-    .counter-card{
+    .counter-card {
         width: 31%;
-        padding: 25px 0 10px;
+        padding: 35px 0 10px;
     }
 
     .counter-card-img {
@@ -143,17 +242,20 @@
         top: -21px;
     }
     .counter-card-details h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
     .counter-card-details p {
-        font-size: 10px;
+        font-size: 14px;
     }
     /* Download App  */
     #download-app{
-        padding: 15px 0;
+        padding: 25px 0;
+    }
+    .download-app-img {
+        padding: 0px 90px;
     }
     .download-app-title {
-        font-size: 16px;
+        font-size: 26px;
         text-align: center;
     }
     .download-app-desc {
@@ -168,7 +270,7 @@
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575.98px) {
     .secn-title h2{
         font-size: 16px;
     }
