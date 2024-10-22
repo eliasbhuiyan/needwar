@@ -291,8 +291,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="product-filter">
+                <div class="col-md-4 col-lg-3">
+                    <!-- Product Filter Desktop View -->
+                    <div class="product-filter desktop-view">
                         <div class="filter-title">
                             <h3>দাম</h3>
                         </div>
@@ -398,10 +399,128 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Product Filter Mobile View -->
+                    <div class="product-filter-canvas-btn">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-filter"></i>
+                            ফিল্টার করুন
+                        </button>
+                    </div>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      <div class="offcanvas-body">
+                        <div class="product-filter mobile-view">
+                            <div class="filter-title">
+                                <h3>দাম</h3>
+                            </div>
+                            <div class="filter-price">
+                                <input type="number" placeholder="সর্বনিম্ন">
+                                <span>-</span>
+                                <input type="number" placeholder="সর্বোচ্চ">
+                                <button class="confirm-btn">কনফার্ম</button>
+                            </div>
+                            <div class="filter-title">
+                                <h3>সর্বনিম্ন অর্ডার</h3>
+                            </div>
+                            <div class="order-limit">
+                                <input type="number" placeholder="সর্বনিম্ন অর্ডার">
+                                <button class="confirm-btn">কনফার্ম</button>
+                            </div>
+                            <div class="filter-title">
+                                <h3>স্টক</h3>
+                            </div>
+                            <div class="stock-check checkbox">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="instock">
+                                    <label for="instock">স্টক আছে</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="outstock">
+                                    <label for="outstock">স্টক নাই</label>
+                                </div>
+                            </div>
+                            <div class="filter-title">
+                                <h3>ব্র্যান্ড</h3>
+                            </div>
+                            <div class="brand-check checkbox">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="Apple">
+                                    <label for="Apple">Apple</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="Oppo">
+                                    <label for="Oppo">Oppo</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="Redmi">
+                                    <label for="Redmi">Redmi</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="Motowala">
+                                    <label for="Motowala">Motowala</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="Itel">
+                                    <label for="Itel">Itel</label>
+                                </div>
+                            </div>
+                            <div class="filter-title">
+                                <h3>রেটিং</h3>
+                            </div>
+                            <div class="filter-rating">
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-3">
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="row product-wraper">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -422,7 +541,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -443,7 +562,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -464,7 +583,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -485,7 +604,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -506,7 +625,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -527,7 +646,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -548,7 +667,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -569,7 +688,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -590,7 +709,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -611,7 +730,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -632,7 +751,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -653,7 +772,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
@@ -674,7 +793,49 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
+                            <div class="product-card">
+                                <div class="badge"><span>৳2000</span></div>
+                                <div class="product-image">
+                                    <img src="assets/images/product.png" alt="Galaxy M55 5G" class="w-100">
+                                </div>
+                                <div class="product-details">
+                                    <h5 class="product-title">Galaxy M55 5G</h5>
+                                    <p class="product-info">সর্বনিম্ন অর্ডার: ৬০ পিস</p>
+                                    <p class="price">৳ ১০০০০ <del>৳ ১২০০০</del></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="order-button">অর্ডার করুন</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3">
+                            <div class="product-card">
+                                <div class="badge"><span>৳2000</span></div>
+                                <div class="product-image">
+                                    <img src="assets/images/product.png" alt="Galaxy M55 5G" class="w-100">
+                                </div>
+                                <div class="product-details">
+                                    <h5 class="product-title">Galaxy M55 5G</h5>
+                                    <p class="product-info">সর্বনিম্ন অর্ডার: ৬০ পিস</p>
+                                    <p class="price">৳ ১০০০০ <del>৳ ১২০০০</del></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <button class="order-button">অর্ডার করুন</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3">
                             <div class="product-card">
                                 <div class="badge"><span>৳2000</span></div>
                                 <div class="product-image">
