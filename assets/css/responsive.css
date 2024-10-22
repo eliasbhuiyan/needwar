@@ -45,10 +45,13 @@
         justify-content: center;
     }
     .cetagory-card-img{
-        padding: 0 26px;
+        padding: 0 26px !important;
     }
     .cetagory-card-img img{
         width: 100%;
+    }
+    .cetagory-card-img.recycle{
+        padding: 0 auto;
     }
     #cetagory .row{
         row-gap: 15px;
@@ -182,10 +185,13 @@
         justify-content: center;
     }
     .cetagory-card-img{
-        padding: 0 26px;
+        padding: 0 26px !important;
     }
     .cetagory-card-img img{
         width: 100%;
+    }
+    .cetagory-card-img.recycle{
+        padding: 0 auto;
     }
     #cetagory .row{
         row-gap: 15px;
@@ -322,10 +328,13 @@
         justify-content: center;
     }
     .cetagory-card-img{
-        padding: 0 26px;
+        padding: 0 26px !important;
     }
     .cetagory-card-img img{
         width: 100%;
+    }
+    .cetagory-card-img.recycle{
+        padding: 0 auto;
     }
     #cetagory .row{
         row-gap: 15px;
