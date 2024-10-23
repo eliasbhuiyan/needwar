@@ -1,0 +1,203 @@
+/* retailer login part start */
+#retailer-login{
+    background: url("../images/login/login-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.log-reg-header{
+    margin-bottom: 35px;
+}
+.log-reg-header h2{
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+}
+.log-reg-header p{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+.log-reg-form-wraper{
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.log-reg-form-wraper input{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.log-reg-form-wraper button{
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
+.log-reg-form-wraper button:hover{
+    background-color: #031f49;
+}
+
+.log-reg-form-wraper .password{
+    position: relative;
+}
+.log-reg-form-wraper .password .open,
+.log-reg-form-wraper .password .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* retailer login part end */
+/* log Reg Bottom part start */
+#login-reg-bottom{
+    padding-top: 35px;
+    background-color: var(--bg-color);
+}
+.log-reg-botttom-title{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+}
+.choose-needwar-card{
+    height: 100%;
+    display: flex;
+    padding: 10px 20px;
+    background-color: white;
+    gap: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-icon{
+    font-size: 35px;
+    color: var(--brand-color);
+}
+.card-details h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.card-details p{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+/* log Reg Bottom part end */
+
+/* Responsive */
+
+@media screen and (max-width: 991.98px) {
+    .log-reg-header h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .log-reg-header p {
+        font-size: 14px;
+        padding-top: 6px;
+        text-align: center;
+    }
+    .log-reg-botttom-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .choose-needwar-card {
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .card-icon {
+        text-align: center;
+    }
+    .card-details h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .card-details p {
+        font-size: 12px;
+        text-align: center;
+    }       
+}
+
+@media screen and (max-width: 767.98px) {
+    .log-reg-header h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .log-reg-header p {
+        font-size: 14px;
+        padding-top: 6px;
+        text-align: center;
+    }
+    .log-reg-botttom-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .choose-needwar-card {
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .card-icon {
+        text-align: center;
+    }
+    .card-details h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .card-details p {
+        font-size: 12px;
+        text-align: center;
+    }    
+}
+
+@media screen and (max-width: 575.98px) {
+    .log-reg-header h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .log-reg-header p {
+        font-size: 14px;
+        padding-top: 6px;
+        text-align: center;
+    }
+    .log-reg-botttom-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .choose-needwar-card {
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .card-icon {
+        text-align: center;
+    }
+    .card-details h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .card-details p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
