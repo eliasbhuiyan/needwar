@@ -1,24 +1,28 @@
-/* retailer login part start */
+/* login reg part start */
 #retailer-login{
     background: url("../images/login/login-bg.png") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 50px 0;
 }
 .log-reg-header{
     margin-bottom: 35px;
+    text-align: center;
 }
 .log-reg-header h2{
-    font-size: 52px;
+    font-size: 40px;
     font-weight: 700;
     color: white;
 }
 .log-reg-header p{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: white;
+    padding-top: 6px;
 }
 .log-reg-form-wraper{
+    max-width: 500px;
     background-color: white;
     padding: 30px 40px;
     border-radius: 4px;
@@ -26,6 +30,7 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    margin: auto;
 }
 .title{
     font-size: 20px;
@@ -66,7 +71,7 @@
     cursor: pointer;
 }
 
-/* retailer login part end */
+/* login reg part end */
 /* log Reg Bottom part start */
 #login-reg-bottom{
     padding-top: 35px;
@@ -116,6 +121,12 @@
     font-weight: 600;
     color: var(--brand-color);
 }
+.form-bottom .into{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding-bottom: 8px;
+}
 /* log Reg Bottom part end */
 
 /* Responsive */
@@ -123,12 +134,9 @@
 @media screen and (max-width: 991.98px) {
     .log-reg-header h2 {
         font-size: 30px;
-        text-align: center;
     }
     .log-reg-header p {
         font-size: 14px;
-        padding-top: 6px;
-        text-align: center;
     }
     .log-reg-botttom-title {
         font-size: 20px;
@@ -155,12 +163,9 @@
 @media screen and (max-width: 767.98px) {
     .log-reg-header h2 {
         font-size: 30px;
-        text-align: center;
     }
     .log-reg-header p {
         font-size: 14px;
-        padding-top: 6px;
-        text-align: center;
     }
     .log-reg-botttom-title {
         font-size: 20px;
@@ -187,12 +192,9 @@
 @media screen and (max-width: 575.98px) {
     .log-reg-header h2 {
         font-size: 30px;
-        text-align: center;
     }
     .log-reg-header p {
         font-size: 14px;
-        padding-top: 6px;
-        text-align: center;
     }
     .log-reg-botttom-title {
         font-size: 20px;
