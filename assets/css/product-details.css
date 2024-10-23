@@ -169,7 +169,8 @@
 }
 
 #product-details-body,
-#product-reviews{
+#product-reviews,
+#return-policy{
     padding: 10px;
     border: 1px solid var(--primary-color);
     border-radius: 8px;
@@ -266,7 +267,12 @@
     color: var(--secondary-color);
 }
 .reviewer-details .review-content{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+#return-policy p{
+    font-size: 16px;
     font-weight: 500;
     color: var(--secondary-color);
 }
