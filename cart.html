@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEEDWAR E-Commerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- ========== Header Part Start ============= -->
+    <header id="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="header_contact">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span class="contact-number">+880 1234 567890</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span class="contact-email">info@needwar.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header_flex">
+                            <div class="header_top_menu">
+                                <p>
+                                    <i class="fa-solid fa-user"></i>
+                                    Help & Support
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                                <ul>
+                                    <li><a href="#">Return & Refund Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Shipping & Delivery</a></li>
+                                    <li><a href="#">Support +880 1234 567890</a></li>
+                                </ul>
+                            </div>
+                            <div class="social-icons">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/social/facebook.png" alt="facebook"
+                                                class="w-100 h-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/social/instagram.png" alt="instagram"
+                                                class="w-100 h-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/social/youtube.png" alt="youtube"
+                                                class="w-100 h-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/social/linkedin.png" alt="linkedin"
+                                                class="w-100 h-100">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ======== Navbar Part Start ======== -->
+        <nav class="navbar navbar-expand-lg main_menu">
+            <div class="container">
+                <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <a class="navbar-brand header-logo" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo" class="w-100 h-100">
+                </a>
+                <!-- Search bar mobile view -->
+                <div class="search-container mobile-view">
+                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                    <input type="text" class="search-input" placeholder="Search...">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="ms-auto d-flex align-items-center gap-5">
+                        <!-- Search bar desktop view -->
+                        <div class="search-container desktop-view">
+                            <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                            <input type="text" class="search-input" placeholder="Search...">
+                        </div>
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fa-regular fa-circle-user"></i>LOGIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SIGNUP</a>
+                            </li>
+                            <li class="nav-item">
+                                <label for="filter" class="switch" aria-label="Toggle Filter">
+                                    <input type="checkbox" id="filter" />
+                                    <span>English</span>
+                                    <span>বাংলা</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== Header Part End ============= -->
+    <!-- ========== Cart Part Start ============= -->
+    <section id="cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="cart_main">
+                        <h2 class="cart-title">শপিং কার্ট:</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <p>পন্যের বিবরন</p>
+                                    </th>
+                                    <th>
+                                        <p>পরিমান</p>
+                                    </th>
+                                    <th>
+                                        <p>ইউনিট মূল্য</p>
+                                    </th>
+                                    <th>
+                                        <p>সাব-টোটাল</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="product-cart-details">
+                                            <div class="product-image">
+                                                <img src="assets/images/product.png" alt="product" class="w-100">
+                                            </div>
+                                            <div class="details">
+                                                <h4>Nokia C100</h4>
+                                                <p>Seller: Foodganj</p>
+                                                <p>Brand: Apple</p>
+                                                <p>Variend: 8GB, Black</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="product-quantity">
+                                            <button class="minus-btn"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="1">
+                                            <button class="plus-btn"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="unit-price">৳ ৯,০০০</p>
+                                    </td>
+                                    <td>
+                                        <div class="sub-delete-wraper">
+                                            <p class="sub-total">৳ ৭২,০০০</p>
+                                            <button class="delete-product-btn">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cart-details">
+                                            <div class="product-image">
+                                                <img src="assets/images/product.png" alt="product" class="w-100">
+                                            </div>
+                                            <div class="details">
+                                                <h4>Nokia C100</h4>
+                                                <p>Seller: Foodganj</p>
+                                                <p>Brand: Apple</p>
+                                                <p>Variend: 8GB, Black</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="product-quantity">
+                                            <button class="minus-btn"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="1">
+                                            <button class="plus-btn"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="unit-price">৳ ৯,০০০</p>
+                                    </td>
+                                    <td>
+                                        <div class="sub-delete-wraper">
+                                            <p class="sub-total">৳ ৭২,০০০</p>
+                                            <button class="delete-product-btn">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cart-details">
+                                            <div class="product-image">
+                                                <img src="assets/images/product.png" alt="product" class="w-100">
+                                            </div>
+                                            <div class="details">
+                                                <h4>Nokia C100</h4>
+                                                <p>Seller: Foodganj</p>
+                                                <p>Brand: Apple</p>
+                                                <p>Variend: 8GB, Black</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="product-quantity">
+                                            <button class="minus-btn"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="1">
+                                            <button class="plus-btn"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="unit-price">৳ ৯,০০০</p>
+                                    </td>
+                                    <td>
+                                        <div class="sub-delete-wraper">
+                                            <p class="sub-total">৳ ৭২,০০০</p>
+                                            <button class="delete-product-btn">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cart-details">
+                                            <div class="product-image">
+                                                <img src="assets/images/product.png" alt="product" class="w-100">
+                                            </div>
+                                            <div class="details">
+                                                <h4>Nokia C100</h4>
+                                                <p>Seller: Foodganj</p>
+                                                <p>Brand: Apple</p>
+                                                <p>Variend: 8GB, Black</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="product-quantity">
+                                            <button class="minus-btn"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="1">
+                                            <button class="plus-btn"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="unit-price">৳ ৯,০০০</p>
+                                    </td>
+                                    <td>
+                                        <div class="sub-delete-wraper">
+                                            <p class="sub-total">৳ ৭২,০০০</p>
+                                            <button class="delete-product-btn">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="product-cart-details">
+                                            <div class="product-image">
+                                                <img src="assets/images/product.png" alt="product" class="w-100">
+                                            </div>
+                                            <div class="details">
+                                                <h4>Nokia C100</h4>
+                                                <p>Seller: Foodganj</p>
+                                                <p>Brand: Apple</p>
+                                                <p>Variend: 8GB, Black</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="product-quantity">
+                                            <button class="minus-btn"><i class="fa-solid fa-minus"></i></button>
+                                            <input type="number" value="1">
+                                            <button class="plus-btn"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="unit-price">৳ ৯,০০০</p>
+                                    </td>
+                                    <td>
+                                        <div class="sub-delete-wraper">
+                                            <p class="sub-total">৳ ৭২,০০০</p>
+                                            <button class="delete-product-btn">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="order_details">
+                        <h2 class="cart-title">অর্ডারের বিস্তারিত:</h2>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span class="points">মোট আইটেম:</span>
+                                    ১০ (৫ ভেরিয়েশন | ১০ আইটেম)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="points">সাব-টোটাল:</span>
+                                    <span>৳ ৭৮,০০০.০০</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="points">সকাউন্ট</span>
+                                    <span>৳ ৭৮০.০০</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="total-price">
+                                    <span class="points">টোটাল</span>
+                                    <span> ৳ ৭৭,২২০.০০</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="product-btns">
+                            <a href="#" class="add-to-cart-btn">আরো কেনাকাটা করুন</a>
+                            <a href="#" class="buy-now-cart-btn">চেক আউট করুন</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Cart Part End ============= -->
+    <!-- ========== Footer Part Start ============= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/images/footer-logo.png" alt="footer-logo" class="w-100 h-100">
+                    </a>
+                    <p class="footer-desc">
+                        Needwar being the trusted online shop in over the world aims to provide a trouble-free shopping
+                        experience for the people of the world but is also providing ample opportunity for international
+                        online shopping from Needwar.
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="footer-menu">
+                        <h3 class="footer-menu-title">about</h3>
+                        <ul>
+                            <li><a href="#">About Needwar</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Why Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="footer-menu">
+                        <h3 class="footer-menu-title">quick link</h3>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Return & Refund </a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Privacy Notice</a></li>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Sign up</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-4">
+                    <div class="footer-menu">
+                        <h3 class="footer-menu-title">contact</h3>
+                        <ul>
+                            <li><a href="#"><span class="footer-menu-sub-title">Mobile :</span> <span> 880 1820208540
+                                        <br> (9am - 8pm bd time)</span>
+                                </a></li>
+                            <li><a href="#"><span class="footer-menu-sub-title">Email :</span> <span>
+                                        needwarofficial@gmail.com</span> </a></li>
+                            <li>
+                                <p>
+                                    <span class="footer-menu-sub-title">Corporate Office:</span>
+                                    <span>
+                                        1/1-A, Kamalapur Bazar Road, Mothijeel
+                                        Dhaka 1217, Bangladesh</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="payment-methods">
+                        <h3 class="footer-menu-title">payment methods</h3>
+                        <ul class="payment-method-image">
+                            <li>
+                                <img src="assets/images/brack-bank.png" alt="brack-bank" class="w-100 h-100">
+                            </li>
+                            <li>
+                                <img src="assets/images/city-bank.jpg" alt="city-bank" class="w-100 h-100">
+                            </li>
+                            <li>
+                                <img src="assets/images/dbbl.avif" alt="dbbl" class="w-100 h-100">
+                            </li>
+                            <li>
+                                <img src="assets/images/islamic-bank.png" alt="islamic-bank" class="w-100 h-100">
+                            </li>
+                            <li>
+                                <img src="assets/images/ncc-bank.jpg" alt="ncc-bank" class="w-100 h-100">
+                            </li>
+                            <li>
+                                <img src="assets/images/ebl-back.png" alt="ebl-back" class="w-100 h-100">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-icons">
+                        <h3 class="footer-menu-title">follow us</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/social/facebook.png" alt="facebook" class="w-100 h-100">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/social/instagram.png" alt="instagram" class="w-100 h-100">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/social/youtube.png" alt="youtube" class="w-100 h-100">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/social/linkedin.png" alt="linkedin" class="w-100 h-100">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                <p>Copyright © 2024 Needwar Limited | Designed By <span>Uddokta Digital Solutions</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== Footer Part End ============= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
