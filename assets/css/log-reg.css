@@ -102,6 +102,20 @@
     font-weight: 700;
     color: var(--secondary-color);
 }
+.form-bottom{
+    text-align: center;
+    margin-top: 20px;
+}
+.form-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.form-bottom a{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-color);
+}
 /* log Reg Bottom part end */
 
 /* Responsive */
