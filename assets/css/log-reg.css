@@ -33,18 +33,24 @@
     margin: auto;
 }
 .title{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 15px;
 }
-.log-reg-form-wraper input{
+.log-reg-form-wraper input,
+.log-reg-form-wraper select,
+.log-reg-form-wraper textarea{
     width: 100%;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
     padding: 6px;
     text-align: center;
     margin-bottom: 15px;
+}
+.address-select{
+    display: flex;
+    gap: 10px;
 }
 .log-reg-form-wraper .login-btn{
     width: 100%;
@@ -80,7 +86,54 @@
     right: 10px;
     cursor: pointer;
 }
-
+.form-bottom{
+    text-align: center;
+    margin-top: 20px;
+}
+.form-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.form-bottom a{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brand-color);
+}
+.form-bottom .into{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding-bottom: 8px;
+}
+.img-info{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.img-upload {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--brand-color);
+    color: white;
+    cursor: pointer;
+}
+.img-upload input{
+    display: none;
+}
+.photo-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.photo-details .btn-close{
+    font-size: 14px;
+}
 /* login reg part end */
 /* log Reg Bottom part start */
 #login-reg-bottom{
@@ -116,26 +169,6 @@
     font-size: 16px;
     font-weight: 700;
     color: var(--secondary-color);
-}
-.form-bottom{
-    text-align: center;
-    margin-top: 20px;
-}
-.form-bottom p{
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-.form-bottom a{
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--brand-color);
-}
-.form-bottom .into{
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--secondary-color);
-    padding-bottom: 8px;
 }
 /* log Reg Bottom part end */
 
