@@ -46,7 +46,7 @@
     text-align: center;
     margin-bottom: 15px;
 }
-.log-reg-form-wraper button{
+.log-reg-form-wraper .login-btn{
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -56,8 +56,18 @@
     background-color: var(--primary-color);
     color: white;
 }
-.log-reg-form-wraper button:hover{
+.log-reg-form-wraper .login-btn:hover{
     background-color: #031f49;
+}
+.log-reg-form-wraper .go-back-btn{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .log-reg-form-wraper .password{
