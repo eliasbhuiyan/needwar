@@ -343,8 +343,8 @@
     #new-arrival{
         padding: 15px 0;
     }
-    #new-arrival .row{
-        gap: 8px;
+    #new-arrival .row > div{
+        padding: 0 4px;
     }
     /* Happy Customer Css */
     #happyCustomer{
