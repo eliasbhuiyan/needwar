@@ -1,33 +1,40 @@
 /* login reg part start */
-#retailer-login{
+#retailer-login {
     background: url("../images/login/login-bg.png") no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     padding: 50px 0;
+    display: flex;
+    align-items: center;
 }
-#thank-you{
+
+#thank-you {
     background: url("../images/login/thank-you.png") no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
-.log-reg-header{
+
+.log-reg-header {
     margin-bottom: 35px;
     text-align: center;
 }
-.log-reg-header h2{
+
+.log-reg-header h2 {
     font-size: 40px;
     font-weight: 700;
     color: white;
 }
-.log-reg-header p{
+
+.log-reg-header p {
     font-size: 20px;
     font-weight: 700;
     color: white;
     padding-top: 6px;
 }
-.log-reg-form-wraper{
+
+.log-reg-form-wraper {
     max-width: 500px;
     background-color: white;
     padding: 30px 40px;
@@ -38,15 +45,17 @@
     -o-border-radius: 4px;
     margin: auto;
 }
-.title{
+
+.title {
     font-size: 16px;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 15px;
 }
+
 .log-reg-form-wraper input,
 .log-reg-form-wraper select,
-.log-reg-form-wraper textarea{
+.log-reg-form-wraper textarea {
     width: 100%;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
@@ -54,11 +63,13 @@
     text-align: center;
     margin-bottom: 15px;
 }
-.address-select{
+
+.address-select {
     display: flex;
     gap: 10px;
 }
-.login-btn{
+
+.login-btn {
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -68,10 +79,12 @@
     background-color: var(--primary-color);
     color: white;
 }
-.login-btn:hover{
+
+.login-btn:hover {
     background-color: #031f49;
 }
-.log-reg-form-wraper .go-back-btn{
+
+.log-reg-form-wraper .go-back-btn {
     width: 100%;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
@@ -82,41 +95,48 @@
     color: var(--primary-color);
 }
 
-.log-reg-form-wraper .password{
+.log-reg-form-wraper .password {
     position: relative;
 }
+
 .log-reg-form-wraper .password .open,
-.log-reg-form-wraper .password .close{
+.log-reg-form-wraper .password .close {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
 }
-.form-bottom{
+
+.form-bottom {
     text-align: center;
     margin-top: 20px;
 }
-.form-bottom p{
+
+.form-bottom p {
     font-size: 14px;
     font-weight: 600;
     color: var(--primary-color);
 }
-.form-bottom a{
+
+.form-bottom a {
     font-size: 14px;
     font-weight: 600;
     color: var(--brand-color);
 }
-.form-bottom .into{
+
+.form-bottom .into {
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-color);
     padding-bottom: 8px;
 }
-.img-info{
+
+.img-info {
     font-size: 12px;
     font-weight: 400;
     color: var(--secondary-color);
 }
+
 .img-upload {
     width: 100%;
     border: none;
@@ -128,31 +148,37 @@
     color: white;
     cursor: pointer;
 }
-.img-upload input{
+
+.img-upload input {
     display: none;
 }
-.photo-details{
+
+.photo-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
 }
-.photo-details .btn-close{
+
+.photo-details .btn-close {
     font-size: 14px;
 }
+
 /* login reg part end */
 /* log Reg Bottom part start */
-#login-reg-bottom{
+#login-reg-bottom {
     padding-top: 35px;
     background-color: var(--bg-color);
 }
-.log-reg-botttom-title{
+
+.log-reg-botttom-title {
     font-size: 36px;
     font-weight: 700;
     color: var(--primary-color);
     padding-bottom: 20px;
 }
-.choose-needwar-card{
+
+.choose-needwar-card {
     height: 100%;
     display: flex;
     padding: 10px 20px;
@@ -161,24 +187,28 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-.card-icon{
+
+.card-icon {
     font-size: 35px;
     color: var(--brand-color);
 }
-.card-details h3{
+
+.card-details h3 {
     font-size: 24px;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 10px;
 }
-.card-details p{
+
+.card-details p {
     font-size: 16px;
     font-weight: 700;
     color: var(--secondary-color);
 }
+
 /* log Reg Bottom part end */
 /* Thank you part Start */
-.thank-you-wraper{
+.thank-you-wraper {
     position: absolute;
     top: 0;
     left: 0;
@@ -189,7 +219,8 @@
     align-items: center;
     justify-content: center;
 }
-.thank-you-card{
+
+.thank-you-card {
     background-color: white;
     padding: 20px 30px;
     border-radius: 4px;
@@ -199,25 +230,29 @@
     -o-border-radius: 4px;
     max-width: 800px;
 }
-.thank-you-card .success-icon{
+
+.thank-you-card .success-icon {
     font-size: 50px;
     text-align: center;
 }
-.thank-you-card .title{
+
+.thank-you-card .title {
     text-align: center;
     font-size: 24px;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 20px;
 }
-.thank-you-card .message{
+
+.thank-you-card .message {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 20px;
 }
-.thank-you-card .btn{
+
+.thank-you-card .btn {
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -228,11 +263,13 @@
     color: white;
     cursor: pointer;
 }
-.thank-you-btn{
+
+.thank-you-btn {
     display: flex;
     gap: 10px;
 }
-.thank-you-btn .go-back-btn{
+
+.thank-you-btn .go-back-btn {
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -242,17 +279,92 @@
     background-color: var(--brand-color);
     color: white;
 }
+
 /* Thank you part end */
 /* Reg Steps part end */
-#reg-steps{
+#reg-steps {
     background-color: white;
     padding: 50px 0;
 }
-.reg-step-vdo{
+
+.reg-step-vdo {
+    height: 300px;
     max-width: 600px;
     margin: 0 auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
 }
+
 /* Reg Steps part end */
+/* Reg Easy Steps part end */
+#reg-easy-step {
+    padding: 50px 0;
+    background-color: var(--bg-color);
+}
+
+.easy-steps-wraper {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.easy-steps-wraper::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78%;
+    height: 1px;
+    background-color: var(--brand-color);
+    z-index: -1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.easy-steps-wraper .easy-steps-items {
+    text-align: center;
+}
+
+.easy-steps-wraper .easy-steps-items .number {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+    margin: auto;
+}
+
+.easy-steps-wraper .easy-steps-items .esy-step-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 5px;
+}
+
+.easy-steps-wraper .easy-steps-items .esy-step-details {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Reg Easy Steps part end */
 
 /* Responsive */
 
@@ -260,9 +372,11 @@
     .log-reg-header h2 {
         font-size: 30px;
     }
+
     .log-reg-header p {
         font-size: 14px;
     }
+
     .log-reg-botttom-title {
         font-size: 20px;
         text-align: center;
@@ -272,26 +386,61 @@
         padding: 10px 10px;
         flex-direction: column;
     }
+
     .card-icon {
         text-align: center;
     }
+
     .card-details h3 {
         font-size: 15px;
         text-align: center;
     }
+
     .card-details p {
         font-size: 12px;
         text-align: center;
-    }       
+    }
+    .easy-steps-wraper {
+        max-width: 500px;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .easy-steps-items {
+        display: flex;
+        gap: 10px;
+    }
+
+    .easy-steps-items .details {
+        width: 100%;
+        text-align: start;
+    }
+
+    .easy-steps-wraper::after {
+        top: 50%;
+        left: 24px;
+        transform: translateX(auto);
+        transform: translateY(-50%);
+        height: 78%;
+        width: 1px;
+        background-color: var(--brand-color);
+        z-index: -1;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
 }
 
 @media screen and (max-width: 767.98px) {
     .log-reg-header h2 {
         font-size: 30px;
     }
+
     .log-reg-header p {
         font-size: 14px;
     }
+
     .log-reg-botttom-title {
         font-size: 20px;
         text-align: center;
@@ -301,26 +450,61 @@
         padding: 10px 10px;
         flex-direction: column;
     }
+
     .card-icon {
         text-align: center;
     }
+
     .card-details h3 {
         font-size: 15px;
         text-align: center;
     }
+
     .card-details p {
         font-size: 12px;
         text-align: center;
-    }    
+    }
+    .easy-steps-wraper {
+        max-width: 500px;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .easy-steps-items {
+        display: flex;
+        gap: 10px;
+    }
+
+    .easy-steps-items .details {
+        width: 100%;
+        text-align: start;
+    }
+
+    .easy-steps-wraper::after {
+        top: 50%;
+        left: 24px;
+        transform: translateX(auto);
+        transform: translateY(-50%);
+        height: 78%;
+        width: 1px;
+        background-color: var(--brand-color);
+        z-index: -1;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
 }
 
 @media screen and (max-width: 575.98px) {
     .log-reg-header h2 {
         font-size: 30px;
     }
+
     .log-reg-header p {
         font-size: 14px;
     }
+
     .log-reg-botttom-title {
         font-size: 20px;
         text-align: center;
@@ -330,15 +514,49 @@
         padding: 10px 10px;
         flex-direction: column;
     }
+
     .card-icon {
         text-align: center;
     }
+
     .card-details h3 {
         font-size: 15px;
         text-align: center;
     }
+
     .card-details p {
         font-size: 12px;
         text-align: center;
+    }
+
+    .easy-steps-wraper {
+        max-width: 500px;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .easy-steps-items {
+        display: flex;
+        gap: 10px;
+    }
+
+    .easy-steps-items .details {
+        width: 100%;
+        text-align: start;
+    }
+
+    .easy-steps-wraper::after {
+        top: 50%;
+        left: 24px;
+        transform: translateX(auto);
+        transform: translateY(-50%);
+        height: 78%;
+        width: 1px;
+        background-color: var(--brand-color);
+        z-index: -1;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
     }
 }
