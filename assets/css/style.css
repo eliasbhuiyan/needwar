@@ -420,12 +420,13 @@ body {
 }
 
 .newArrival-slide-items {
+    height: 100%;
     max-height: 300px;
     border-radius: 6px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
     overflow: hidden;
 }
 
