@@ -419,8 +419,7 @@ body {
     background-color: var(--bg-color);
 }
 .newArrival-slide{
-  height: 300px;
-  max-height: 300px;
+  height: 100%;
 }
 
 .newArrival-slide-items {
