@@ -243,6 +243,16 @@
     color: white;
 }
 /* Thank you part end */
+/* Reg Steps part end */
+#reg-steps{
+    background-color: white;
+    padding: 50px 0;
+}
+.reg-step-vdo{
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Reg Steps part end */
 
 /* Responsive */
 
