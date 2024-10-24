@@ -421,7 +421,7 @@ body {
 
 .newArrival-slide-items {
     max-height: 300px;
-    border-radius: 16px;
+    border-radius: 6px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
