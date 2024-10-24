@@ -33,3 +33,13 @@ $('.counter').each(function () {
         }
     });
 });
+
+// product title words limit
+
+const productTitle = document.querySelectorAll(".product-card .product-title")
+
+productTitle.forEach((title)=>{
+    if(title.textContent.length > 20){
+        title.textContent = title.textContent.slice(0,20) + "..."
+    }
+})
