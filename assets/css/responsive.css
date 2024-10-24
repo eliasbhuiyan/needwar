@@ -344,7 +344,7 @@
         padding: 15px 0;
     }
     #new-arrival .row{
-        row-gap: 8px;
+        gap: 8px;
     }
     /* Happy Customer Css */
     #happyCustomer{
