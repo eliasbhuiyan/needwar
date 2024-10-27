@@ -351,6 +351,7 @@ body {
     border-bottom: 1px solid #ccc;
     outline: none;
     opacity: 0;
+    visibility: hidden;
     -webkit-transition: width 0.4s ease;
     -moz-transition: width 0.4s ease;
     -ms-transition: width 0.4s ease;
@@ -364,6 +365,7 @@ body {
 .search-container:hover .search-input {
     width: 300px;
     opacity: 1;
+    visibility: visible;
 }
 
 .search-container .search-input:focus,
