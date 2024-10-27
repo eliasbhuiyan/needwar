@@ -108,50 +108,74 @@
             </div>
         </div>
         <!-- ======== Navbar Part Start ======== -->
-        <nav class="navbar navbar-expand-lg main_menu">
+        <nav class="main_menu">
             <div class="container">
-                <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </button>
-                <a class="navbar-brand header-logo" href="index.html">
-                    <img src="assets/images/logo.png" alt="logo" class="w-100 h-100">
-                </a>
-                <!-- Search bar mobile view -->
-                <div class="search-container mobile-view">
-                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
-                    <input type="text" class="search-input" placeholder="Search...">
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="ms-auto d-flex align-items-center gap-5">
-                        <!-- Search bar desktop view -->
-                        <div class="search-container desktop-view">
-                            <i class="fa fa-search search-icon" aria-hidden="true"></i>
-                            <input type="text" class="search-input" placeholder="Search...">
+                <div class="ms-auto d-flex align-items-center justify-content-between md-gap-5">
+                    <div class="menu-lft d-flex gap-3 align-items-end">
+                        <a class="header-logo" href="index.html">
+                            <img src="assets/images/logo.png" alt="logo" class="w-100 h-100">
+                        </a>
+                        <div class="menu_category_wraper">
+                            <button class="category-btn">
+                                <i class="fa-solid fa-bars-staggered category-icon"></i>
+                                <span>ক্যাটাগরি</span>
+                            </button>
+                            <ul class="menu_category_list">
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="shop-page.html">Mobile Shop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Computer Shop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Electrical & Electronics</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Sanitary & Hardware</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Fashion</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Recycle Products</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i
-                                        class="fa-regular fa-circle-user"></i>LOGIN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SIGNUP</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cart.html">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <label for="filter" class="switch" aria-label="Toggle Filter">
-                                    <input type="checkbox" id="filter" />
-                                    <span>English</span>
-                                    <span>বাংলা</span>
-                                </label>
-                            </li>
-                        </ul>
                     </div>
+                    <ul class="mb-lg-0 d-flex align-items-center menu_list">
+                        <li class="nav-item">
+                            <div class="search-container">
+                                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                                <input type="text" class="search-input" placeholder="Search...">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" href="#"><i class="fa-regular fa-circle-user"></i>
+                             <span>LOGIN</span>
+                            </a>
+                        </li>
+                        <li class="nav-item signup">
+                            <a class="nav-link" href="#"><span>SIGNUP</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <label for="filter" class="switch" aria-label="Toggle Filter">
+                                <input type="checkbox" id="filter" />
+                                <span>English</span>
+                                <span>বাংলা</span>
+                            </label>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
