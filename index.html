@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
     <!-- ========== Header Part Start ============= -->
     <header id="header">
@@ -80,50 +82,74 @@
             </div>
         </div>
         <!-- ======== Navbar Part Start ======== -->
-        <nav class="navbar navbar-expand-lg main_menu">
+        <nav class="main_menu">
             <div class="container">
-                <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </button>
-                <a class="navbar-brand header-logo" href="index.html">
-                    <img src="assets/images/logo.png" alt="logo" class="w-100 h-100">
-                </a>
-                <!-- Search bar mobile view -->
-                <div class="search-container mobile-view">
-                    <i class="fa fa-search search-icon" aria-hidden="true"></i>
-                    <input type="text" class="search-input" placeholder="Search...">
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="ms-auto d-flex align-items-center gap-5">
-                        <!-- Search bar desktop view -->
-                        <div class="search-container desktop-view">
-                            <i class="fa fa-search search-icon" aria-hidden="true"></i>
-                            <input type="text" class="search-input" placeholder="Search...">
+                <div class="ms-auto d-flex align-items-center justify-content-between md-gap-5">
+                    <div class="menu-lft d-flex gap-3 align-items-end">
+                        <a class="header-logo" href="index.html">
+                            <img src="assets/images/logo.png" alt="logo" class="w-100 h-100">
+                        </a>
+                        <div class="menu_category_wraper">
+                            <button class="category-btn">
+                                <i class="fa-solid fa-bars-staggered category-icon"></i>
+                                <span>ক্যাটাগরি</span>
+                            </button>
+                            <ul class="menu_category_list">
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="shop-page.html">Mobile Shop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Computer Shop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Electrical & Electronics</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Sanitary & Hardware</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Fashion</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li class="category-item d-flex gap-3 align-items-center">
+                                    <a href="comming-soon.html">Recycle Products</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i
-                                        class="fa-regular fa-circle-user"></i>LOGIN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SIGNUP</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cart.html">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <label for="filter" class="switch" aria-label="Toggle Filter">
-                                    <input type="checkbox" id="filter" />
-                                    <span>English</span>
-                                    <span>বাংলা</span>
-                                </label>
-                            </li>
-                        </ul>
                     </div>
+                    <ul class="mb-lg-0 d-flex align-items-center menu_list">
+                        <li class="nav-item">
+                            <div class="search-container">
+                                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                                <input type="text" class="search-input" placeholder="Search...">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" href="#"><i class="fa-regular fa-circle-user"></i>
+                             <span>LOGIN</span>
+                            </a>
+                        </li>
+                        <li class="nav-item signup">
+                            <a class="nav-link" href="#"><span>SIGNUP</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <label for="filter" class="switch" aria-label="Toggle Filter">
+                                <input type="checkbox" id="filter" />
+                                <span>English</span>
+                                <span>বাংলা</span>
+                            </label>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -208,11 +234,11 @@
                 </div>
                 <div class="col-4 col-md-2">
                     <a href="shop-page.html" class="cetagory-card">
-                        <div class="cetagory-card-img recycle">
-                            <img src="assets/images/cetagory/cetagory-6.png" alt="cetagory-1" class="w-100">
+                        <div class="cetagory-card-img">
+                            <img src="assets/images/cetagory/cetagory-6.png" alt="cetagory-1">
                         </div>
                         <div class="cetagory-card-title">
-                            <h3>Shoes & Bage</h3>
+                            <h3>Recycle Products</h3>
                         </div>
                     </a>
                 </div>
@@ -271,7 +297,7 @@
                 <div class="col-4 col-md-2">
                     <a href="shop-page.html" class="cetagory-card">
                         <div class="cetagory-card-img recycle">
-                            <img src="assets/images/cetagory/cetagory-6.png" alt="cetagory-1" class="w-100">
+                            <img src="assets/images/cetagory/cetagory-6.png" alt="cetagory-1">
                         </div>
                         <div class="cetagory-card-title">
                             <h3>Shoes & Bage</h3>
@@ -489,7 +515,9 @@
                         <img src="assets/images/footer-logo.png" alt="footer-logo" class="w-100 h-100">
                     </a>
                     <p class="footer-desc">
-                        Needwar being the trusted online shop in over the world aims to provide a trouble-free shopping experience for the people of the world but is also providing ample opportunity for international online shopping from Needwar.
+                        Needwar being the trusted online shop in over the world aims to provide a trouble-free shopping
+                        experience for the people of the world but is also providing ample opportunity for international
+                        online shopping from Needwar.
                     </p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
@@ -521,13 +549,15 @@
                     <div class="footer-menu">
                         <h3 class="footer-menu-title">contact</h3>
                         <ul>
-                            <li><a href="#"><span class="footer-menu-sub-title">Mobile :</span> <span> 880 1820208540 <br> (9am - 8pm bd time)</span> 
+                            <li><a href="#"><span class="footer-menu-sub-title">Mobile :</span> <span> 880 1820208540
+                                        <br> (9am - 8pm bd time)</span>
                                 </a></li>
-                            <li><a href="#"><span class="footer-menu-sub-title">Email :</span> <span> needwarofficial@gmail.com</span> </a></li>
+                            <li><a href="#"><span class="footer-menu-sub-title">Email :</span> <span>
+                                        needwarofficial@gmail.com</span> </a></li>
                             <li>
                                 <p>
                                     <span class="footer-menu-sub-title">Corporate Office:</span>
-                                    <span> 
+                                    <span>
                                         1/1-A, Kamalapur Bazar Road, Mothijeel
                                         Dhaka 1217, Bangladesh</span>
                                 </p>
@@ -552,13 +582,13 @@
                             </li>
                             <li>
                                 <img src="assets/images/islamic-bank.png" alt="islamic-bank" class="w-100 h-100">
-                            </li>                            
+                            </li>
                             <li>
                                 <img src="assets/images/ncc-bank.jpg" alt="ncc-bank" class="w-100 h-100">
-                            </li>                            
+                            </li>
                             <li>
                                 <img src="assets/images/ebl-back.png" alt="ebl-back" class="w-100 h-100">
-                            </li>                            
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -568,26 +598,22 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="assets/images/social/facebook.png" alt="facebook"
-                                        class="w-100 h-100">
+                                    <img src="assets/images/social/facebook.png" alt="facebook" class="w-100 h-100">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="assets/images/social/instagram.png" alt="instagram"
-                                        class="w-100 h-100">
+                                    <img src="assets/images/social/instagram.png" alt="instagram" class="w-100 h-100">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="assets/images/social/youtube.png" alt="youtube"
-                                        class="w-100 h-100">
+                                    <img src="assets/images/social/youtube.png" alt="youtube" class="w-100 h-100">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="assets/images/social/linkedin.png" alt="linkedin"
-                                        class="w-100 h-100">
+                                    <img src="assets/images/social/linkedin.png" alt="linkedin" class="w-100 h-100">
                                 </a>
                             </li>
                         </ul>
