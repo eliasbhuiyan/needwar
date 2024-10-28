@@ -363,20 +363,12 @@ body {
     -o-border-radius: 8px;
 }
 
-.search-container:hover .search-input {
+.search-container:hover .search-input,
+.search-container .search-input:focus,
+.search-container .search-input:not(:placeholder-shown) {
     width: 300px;
     opacity: 1;
     visibility: visible;
-}
-
-.search-container .search-input:focus,
-.search-container .search-input:not(:placeholder-shown) {
-    opacity: 1;
-    width: 300px;
-}
-
-.search-container.mobile-view{
-    display: none;
 }
 
 /* ============ Header Css End ================ */
