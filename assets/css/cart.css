@@ -335,6 +335,9 @@
         padding: 6px 10px;
         font-size: 12px;
     }
+    .replace_product p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 575.98px) {
