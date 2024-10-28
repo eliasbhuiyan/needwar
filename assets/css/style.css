@@ -804,7 +804,7 @@ body {
 }
 .whatsapp-popup{
     position: fixed;
-    bottom: 120px;
+    bottom: 50px;
     right: 20px;
     display: flex;
     flex-direction: column;
@@ -812,7 +812,7 @@ body {
     z-index: 9999;
 }
 .whatsapp-popup .arrow{
-    font-size: 40px;
+    font-size: 35px;
     color: #022343;
 }
 /* ============ Footer Css End ================ */
