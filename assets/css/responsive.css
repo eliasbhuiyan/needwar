@@ -151,6 +151,9 @@
       padding: 10px;
       width: 260px !important;
     }
+    .modal-header .modal-title{
+        font-size: 14px;
+    }
     /* Banner Css */
     #hero_banner{
         padding: 16px 0;
