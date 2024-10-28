@@ -4,6 +4,7 @@
 }
 
 .sell_retll_card {
+    max-width: 300px;
     padding: 25px 50px;
     background-color: white;
     border-radius: 10px;
