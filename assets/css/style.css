@@ -338,6 +338,7 @@ body {
 
 .search-icon {
     cursor: pointer;
+    z-index: 999;
 }
 
 .search-input {
@@ -346,7 +347,7 @@ body {
     border-radius: 8px;
     transition: width 0.4s ease;
     position: absolute;
-    right: 20px;
+    right: -4px;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
