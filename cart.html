@@ -130,12 +130,15 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a aria-current="page" href="#"><i class="fa-regular fa-circle-user"></i>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="fa-regular fa-circle-user"></i>
                                 <span>LOGIN</span>
-                            </a>
+                            </button>
                         </li>
                         <li class="nav-item signup">
-                            <a class="nav-link" href="#"><span>SIGNUP</span></a>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                                <span>SIGNUP</span>
+                            </button>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cart.html">
@@ -153,6 +156,39 @@
                 </div>
             </div>
         </nav>
+        <!-- Seller Retailer Option Pop-Up -->
+        <!-- Modal For Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">আপনার লগইন ধরন নির্বাচন করুন</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>আপনি কি সেলার নাকি রিটেলার ?</p>
+                        <a href="seller-login.html" class="btn btn-primary btn-option">সেলার</a>
+                        <a href="retailer-login.html" class="btn btn-secondary btn-option">রিটেলার</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal For Sign-Up -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">আপনার সাইন আপ ধরন নির্বাচন করুন</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>আপনি কি সেলার নাকি রিটেলার ?</p>
+                        <a href="seller-registration.html" class="btn btn-primary btn-option">সেলার</a>
+                        <a href="retailer-registration.html" class="btn btn-secondary btn-option">রিটেলার</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- ========== Header Part End ============= -->
     <!-- ========== Cart Part Start ============= -->
