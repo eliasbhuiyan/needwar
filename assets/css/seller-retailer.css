@@ -216,7 +216,7 @@ Payment Account Start
     margin-top: 10px;
 }
 .payment_account_wraper .payment_accounts_card {
-    width: 32%;
+    width: 31%;
     text-align: center;
     padding: 20px 10px;
     border-radius: 6px;
@@ -264,7 +264,8 @@ Payment Account Start
     margin-right: 10px;
 }
 .account_details .details_items input,
-.account_details .details_items select{
+.account_details .details_items select,
+.account_details .details_items textarea{
     width: 100%;
     max-width: 370px;
     padding: 2px 10px;
@@ -300,7 +301,63 @@ Payment Account Start
 /*=====================
  Payment Account End
 =====================*/
-
+/*=====================
+    My Wallet Start
+=====================*/
+.wallet_withdrow_main{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.wallet_withdrow_main .withdrow_details{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.wallet_main .payment_accounts_card {
+    width: 30%;
+}
+.wallet_withdrow_main .payment_account_details .details_title{
+    width: auto;
+}
+.wallet_withdrow_main .payment_account_details input,
+.wallet_withdrow_main .payment_account_details select,
+.wallet_withdrow_main .payment_account_details textarea{
+    width: 60%;
+    margin-left: auto;
+}
+.wallet_withdrow_main .payment_account_details,
+.wallet_withdrow_main .withdrow_details{
+    margin-top: 0;
+    width: 50%;
+}
+.withdrow_details table{
+    width: 100%;
+    margin-top: 10px;
+}
+.withdrow_details table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+.withdrow_details table tbody tr td{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+/*=====================
+ My Wallet End
+=====================*/
 
 /* Responsive */
 @media (max-width: 991.98px) {
@@ -311,6 +368,9 @@ Payment Account Start
         width: 48%;
     }
     .payment_account_wraper .payment_accounts_card {
+        width: 48%;
+    }
+    .wallet_main .payment_accounts_card {
         width: 48%;
     }
     .dahsbord_chart {
@@ -328,6 +388,21 @@ Payment Account Start
     }
     .dahsbord_chart #myChart2{
         margin: auto;
+    }
+    .wallet_withdrow_main {
+        flex-direction: column;
+    }
+    .wallet_withdrow_main .payment_account_details, .wallet_withdrow_main .withdrow_details {
+        width: 100%;
+    }
+    .wallet_withdrow_main .payment_account_details input, .wallet_withdrow_main .payment_account_details select, .wallet_withdrow_main .payment_account_details textarea {
+        width: 100%;
+    }
+    .wallet_withdrow_main .account_details .details_items{
+        flex-direction: column;
+    }
+    .wallet_withdrow_main .payment_account_details input, .wallet_withdrow_main .payment_account_details select, .wallet_withdrow_main .payment_account_details textarea {
+        margin-left: 0;
     }
 }
 @media (max-width: 767.98px) {
@@ -372,6 +447,9 @@ Payment Account Start
     .payment_account_wraper .payment_accounts_card {
         width: 100%;
     }
+    .wallet_main .payment_accounts_card {
+        width: 100%;
+    }
     .account_details .details_items {
         flex-direction: column;
         align-items: start;
@@ -385,4 +463,5 @@ Payment Account Start
         width: auto;
         margin-left: 0;
     }
+    
 }
