@@ -200,6 +200,7 @@ body {
 }
 
 .main_menu .menu_list li button,
+.main_menu .menu_list li a,
 .main_menu .menu_list li .search-icon{
     color: var(--primary-color);
     font-size: 14px;

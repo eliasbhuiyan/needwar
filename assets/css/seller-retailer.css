@@ -1,0 +1,195 @@
+#dashbord {
+    padding: 50px 0;
+    background-color: var(--bg-color);
+}
+
+.sell_retll_card {
+    padding: 25px 50px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.sell_retll_card .card_img {
+    border: 1px solid var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sell_retll_card .card-body {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.sell_retll_card .card-body h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.sell_retll_card .card-body p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 5px 0;
+}
+
+.sell_retll_card .card-body .card_btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Dashbord Navbar */
+.dashbord_navbar {
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.dashbord_navbar {
+    text-align: start;
+}
+
+.dashbord_navbar .nav-link {
+    position: relative;
+    color: var(--secondary-color);
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashbord_navbar .nav-link.active,
+.dashbord_navbar .show>.nav-link {
+    color: var(--secondary-color);
+    background-color: #FFF4EF;
+}
+
+.dashbord_navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: var(--brand-color);
+    left: 0;
+    top: 0;
+}
+
+/*=====================
+ Dashbord Part Start 
+ ====================*/
+.dashbord_wraper,
+.dashbord_overview,
+.dahsbord_chart {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.dashbord_cards_main,
+.dashbord_overview_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+}
+.dashbord_cards_main .dashbord_cards {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.dashbord_cards_main .dashbord_cards:nth-child(1){
+    background-color: var(--primary-color);
+    color: white;
+}
+.dashbord_cards_main .dashbord_cards:nth-child(2){
+    background-color: var(--brand-color);
+    color: white;
+}
+.dashbord_cards_main .dashbord_cards:nth-child(3){
+    background-color: #1DA76C;
+    color: white;
+}
+.dashbord_cards_main .dashbord_cards:nth-child(4),
+.dashbord_cards_main .dashbord_cards:nth-child(5),
+.dashbord_cards_main .dashbord_cards:nth-child(6){
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.dashbord_overview{
+    margin: 10px 0;
+}
+.dashbord_overview_main .dashbord_cards {
+    width: 22%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.dashbord_overview_main .dashbord_cards:nth-child(1){
+    background-color: var(--primary-color);
+    color: white;
+}
+.dashbord_overview_main .dashbord_cards:nth-child(2){
+    background-color: var(--brand-color);
+    color: white;
+}
+.dashbord_overview_main .dashbord_cards:nth-child(3){
+    background-color: #D30000;
+    color: white;
+}
+.dashbord_overview_main .dashbord_cards:nth-child(4){
+    background-color: #1DA76C;
+    color: white;
+}
+.dashbord_cards .card_title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.dashbord_cards p{
+    font-size: 24px;
+    font-weight: 700;
+}
+.dahsbord_chart{
+    display: flex;
+    gap: 20px;
+}
+.dahsbord_chart .chart1{
+    width: 60%;
+}
+.dahsbord_chart .chart1,
+.dahsbord_chart .chart2{
+    border: 1px solid var(--bg-color);
+    padding: 5px;
+}
+/*=====================
+  Dashbord Part End
+=====================*/
