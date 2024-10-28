@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/seller-retailer.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
     <!-- ========== Header Part Start ============= -->
     <header id="header">
@@ -298,7 +300,64 @@
                         <!-- *** Payment Statement Part End *** -->
                         <!-- *** Payment Account Part Start *** -->
                         <div class="tab-pane fade" id="paymentAccount-nv" role="tabpanel"
-                            aria-labelledby="paymentAccount-tab" tabindex="0">পেমেন্ট একাউন্ট</div>
+                            aria-labelledby="paymentAccount-tab" tabindex="0">
+                            <div class="payment_account_main">
+                                <h3 class="title">পেমেন্ট একাউন্ট</h3>
+                                <div class="payment_account_wraper">
+                                    <div class="payment_accounts_card">
+                                        <h3 class="card_title">ব্যাংক <i class="fa-solid fa-pencil"></i></h3>
+                                        <p>ব্রাক ব্যাংক (মো: কাউসার হোসেন)</p>
+                                    </div>
+                                    <div class="payment_accounts_card">
+                                        <h3 class="card_title">বিকাশ <i class="fa-solid fa-pencil"></i></h3>
+                                        <p>০১৬১২৩৪৪৫১২</p>
+                                    </div>
+                                    <div class="payment_accounts_card">
+                                        <h3 class="card_title">নগদ <i class="fa-solid fa-pencil"></i></h3>
+                                        <p>০১৬১২৩৪১২৩</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment_account_details">
+                                <div class="title">ব্যাংক একাউন্ট </div>
+                                <div class="account_details">
+                                    <div class="details_items">
+                                        <p class="details_title">ব্যাংকের নাম <span>:</span></p>
+                                        <select name="" id="">
+                                            <option value="">ব্যাংক 1</option>
+                                            <option value="">ব্যাংক 2</option>
+                                            <option value="">ব্যাংক 3</option>
+                                            <option value="">ব্যাংক 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="details_items">
+                                        <p class="details_title">একাউন্টের নাম <span>:</span></p>
+                                        <input type="text" value="মো: কাউসার হোসেন">
+                                    </div>
+                                    <div class="details_items">
+                                        <p class="details_title">একাউন্ট নাম্বার <span>:</span></p>
+                                        <input type="text" value="০৩৪৫৬৭৮৯০৪৯৩">
+                                    </div>
+                                    <div class="details_items">
+                                        <p class="details_title">রাউটিং নাম্বার<span>:</span></p>
+                                        <input type="text" value="০৩৪৫৬৭৮৯০৪৯৩">
+                                    </div>
+                                    <div class="details_items">
+                                        <p class="details_title">ব্রাঞ্চের নাম<span>:</span></p>
+                                        <input type="text" value="চাঁদপুর">
+                                    </div>
+                                    <div class="details_items">
+                                        <p class="details_title">সিটির নাম<span>:</span></p>
+                                        <input type="text" value="চাঁদপুর">
+                                    </div>
+                                    <div class="payment_accBtn">
+                                        <button class="btn save">সেভ</button>
+                                        <button class="btn reject">বাতিল</button>
+                                        <button class="btn edit">এডিট</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- *** Payment Account Part End *** -->
                         <!-- *** My Wallet Part Start *** -->
                         <div class="tab-pane fade" id="myWallet-nv" role="tabpanel" aria-labelledby="myWallet-tab"
@@ -490,4 +549,5 @@
         });
     </script>
 </body>
+
 </html>
