@@ -195,18 +195,21 @@
                                 data-bs-target="#orderTracking-nv" type="button" role="tab"
                                 aria-controls="orderTracking-nv" aria-selected="false"><i
                                     class="fa-solid fa-magnifying-glass"></i><span>অর্ডার ট্র্যাকিং</span></button>
-                            <button class="nav-link" id="paymentStatement-tab" data-bs-toggle="pill"
-                                data-bs-target="#paymentStatement-nv" type="button" role="tab"
-                                aria-controls="paymentStatement-nv" aria-selected="false"><i
-                                    class="fa-solid fa-clipboard"></i><span>পেমেন্ট স্ট্যাটমেন্ট</span></button>
-                            <button class="nav-link" id="paymentAccount-tab" data-bs-toggle="pill"
-                                data-bs-target="#paymentAccount-nv" type="button" role="tab"
-                                aria-controls="paymentAccount-nv" aria-selected="false"><i
-                                    class="fa-solid fa-money-check"></i><span>পেমেন্ট একাউন্ট</span></button>
+                            <button class="nav-link" id="fvrtSeller-tab" data-bs-toggle="pill"
+                                data-bs-target="#fvrtSeller-nv" type="button" role="tab" aria-controls="fvrtSeller-nv"
+                                aria-selected="false"><i class="fa-solid fa-cart-shopping"></i><span>পছন্দের
+                                    সেলার</span></button>
+                            <button class="nav-link" id="giftVoucher-tab" data-bs-toggle="pill"
+                                data-bs-target="#giftVoucher-nv" type="button" role="tab" aria-controls="giftVoucher-nv"
+                                aria-selected="false"><i class="fa-solid fa-gift"></i><span>গিফট ভাউচার</span></button>
                             <button class="nav-link" id="myWallet-tab" data-bs-toggle="pill"
                                 data-bs-target="#myWallet-nv" type="button" role="tab" aria-controls="myWallet-nv"
                                 aria-selected="false"><i class="fa-solid fa-wallet"></i><span>আমার
                                     ওয়ালেট</span></button>
+                            <button class="nav-link" id="deliveryLocation-tab" data-bs-toggle="pill"
+                                data-bs-target="#deliveryLocation-nv" type="button" role="tab"
+                                aria-controls="deliveryLocation-nv" aria-selected="false"><i
+                                    class="fa-solid fa-location-dot"></i><span>ডেলিভারি ঠিকানা</span></button>
                             <button class="nav-link" id="notification-tab" data-bs-toggle="pill"
                                 data-bs-target="#notification-nv" type="button" role="tab"
                                 aria-controls="notification-nv" aria-selected="false"><i
@@ -223,11 +226,11 @@
                                 <h2 class="title">ড্যাশবোর্ড</h2>
                                 <div class="dashbord_cards_main">
                                     <div class="dashbord_cards">
-                                        <h3 class="card_title">মোট বিক্রয়</h3>
-                                        <p>৳ ১২,০০০</p>
+                                        <h3 class="card_title">মোট অর্ডার</h3>
+                                        <p>১২</p>
                                     </div>
                                     <div class="dashbord_cards">
-                                        <h3 class="card_title">উত্তোলন</h3>
+                                        <h3 class="card_title">মোট ক্রয়</h3>
                                         <p>৳ ১২,৩৪৫</p>
                                     </div>
                                     <div class="dashbord_cards">
@@ -235,11 +238,11 @@
                                         <p>৳ ১২,০০০</p>
                                     </div>
                                     <div class="dashbord_cards">
-                                        <h3 class="card_title">মাসিক বিক্রয়</h3>
+                                        <h3 class="card_title">মাসিক টার্গেট</h3>
                                         <p>৳ ১২,০০০</p>
                                     </div>
                                     <div class="dashbord_cards">
-                                        <h3 class="card_title">মাসিক উত্তোলন</h3>
+                                        <h3 class="card_title">মাসিক ক্রয়</h3>
                                         <p>৳ ১২,০০০</p>
                                     </div>
                                     <div class="dashbord_cards">
@@ -248,27 +251,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="dashbord_overview">
-                                <div class="dashbord_overview_main">
-                                    <div class="dashbord_cards">
-                                        <h3 class="card_title">মোট অর্ডার</h3>
-                                        <p>১২</p>
-                                    </div>
-                                    <div class="dashbord_cards">
-                                        <h3 class="card_title">পেন্ডিং</h3>
-                                        <p>২</p>
-                                    </div>
-                                    <div class="dashbord_cards">
-                                        <h3 class="card_title">ক্যান্সেল</h3>
-                                        <p>১</p>
-                                    </div>
-                                    <div class="dashbord_cards">
-                                        <h3 class="card_title">ডেলিভারি</h3>
-                                        <p>৯</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dahsbord_chart">
+                            <div class="dahsbord_chart mt-3">
                                 <div class="chart1">
                                     <canvas id="myChart"></canvas>
                                 </div>
@@ -294,71 +277,16 @@
                         <div class="tab-pane fade" id="orderTracking-nv" role="tabpanel"
                             aria-labelledby="orderTracking-tab" tabindex="0">অর্ডার ট্র্যাকিং</div>
                         <!-- *** Order Tracking Part End *** -->
-                        <!-- *** Payment Statement Part Start *** -->
-                        <div class="tab-pane fade" id="paymentStatement-nv" role="tabpanel"
-                            aria-labelledby="paymentStatement-tab" tabindex="0">পেমেন্ট স্ট্যাটমেন্ট</div>
-                        <!-- *** Payment Statement Part End *** -->
-                        <!-- *** Payment Account Part Start *** -->
-                        <div class="tab-pane fade" id="paymentAccount-nv" role="tabpanel"
-                            aria-labelledby="paymentAccount-tab" tabindex="0">
-                            <div class="payment_account_main">
-                                <h3 class="title">পেমেন্ট একাউন্ট</h3>
-                                <div class="payment_account_wraper">
-                                    <div class="payment_accounts_card">
-                                        <h3 class="card_title">ব্যাংক <i class="fa-solid fa-pencil"></i></h3>
-                                        <p>ব্রাক ব্যাংক (মো: কাউসার হোসেন)</p>
-                                    </div>
-                                    <div class="payment_accounts_card">
-                                        <h3 class="card_title">বিকাশ <i class="fa-solid fa-pencil"></i></h3>
-                                        <p>০১৬১২৩৪৪৫১২</p>
-                                    </div>
-                                    <div class="payment_accounts_card">
-                                        <h3 class="card_title">নগদ <i class="fa-solid fa-pencil"></i></h3>
-                                        <p>০১৬১২৩৪১২৩</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="payment_account_details">
-                                <div class="title">ব্যাংক একাউন্ট </div>
-                                <div class="account_details">
-                                    <div class="details_items">
-                                        <p class="details_title">ব্যাংকের নাম <span>:</span></p>
-                                        <select name="" id="">
-                                            <option value="">ব্যাংক 1</option>
-                                            <option value="">ব্যাংক 2</option>
-                                            <option value="">ব্যাংক 3</option>
-                                            <option value="">ব্যাংক 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="details_items">
-                                        <p class="details_title">একাউন্টের নাম <span>:</span></p>
-                                        <input type="text" value="মো: কাউসার হোসেন">
-                                    </div>
-                                    <div class="details_items">
-                                        <p class="details_title">একাউন্ট নাম্বার <span>:</span></p>
-                                        <input type="text" value="০৩৪৫৬৭৮৯০৪৯৩">
-                                    </div>
-                                    <div class="details_items">
-                                        <p class="details_title">রাউটিং নাম্বার<span>:</span></p>
-                                        <input type="text" value="০৩৪৫৬৭৮৯০৪৯৩">
-                                    </div>
-                                    <div class="details_items">
-                                        <p class="details_title">ব্রাঞ্চের নাম<span>:</span></p>
-                                        <input type="text" value="চাঁদপুর">
-                                    </div>
-                                    <div class="details_items">
-                                        <p class="details_title">সিটির নাম<span>:</span></p>
-                                        <input type="text" value="চাঁদপুর">
-                                    </div>
-                                    <div class="payment_accBtn">
-                                        <button class="btn save">সেভ</button>
-                                        <button class="btn reject">বাতিল</button>
-                                        <button class="btn edit">এডিট</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <!-- *** Favourite Seller Part Start *** -->
+                        <div class="tab-pane fade" id="fvrtSeller-nv" role="tabpanel" aria-labelledby="fvrtSeller-tab"
+                            tabindex="0">পছন্দের সেলার</div>
+                        <!-- *** Favourite Seller Part End *** -->
+                        <!-- *** Gift voucher Part Start *** -->
+                        <div class="tab-pane fade" id="giftVoucher-nv" role="tabpanel" aria-labelledby="giftVoucher-tab"
+                            tabindex="0">
+                            গিফট ভাউচার
                         </div>
-                        <!-- *** Payment Account Part End *** -->
+                        <!-- *** Gift voucher Part End *** -->
                         <!-- *** My Wallet Part Start *** -->
                         <div class="tab-pane fade" id="myWallet-nv" role="tabpanel" aria-labelledby="myWallet-tab"
                             tabindex="0">
@@ -450,6 +378,10 @@
                             </div>
                         </div>
                         <!-- *** My Wallet Part End *** -->
+                        <!-- *** Delivey Location Part Start *** -->
+                        <div class="tab-pane fade" id="deliveryLocation-nv" role="tabpanel"
+                            aria-labelledby="deliveryLocation-tab" tabindex="0">ডেলিভারি ঠিকানা</div>
+                        <!-- *** Delivey Location Part End *** -->
                         <!-- *** Notification Part Start *** -->
                         <div class="tab-pane fade" id="notification-nv" role="tabpanel"
                             aria-labelledby="notification-tab" tabindex="0">নোটিফিকেশন</div>

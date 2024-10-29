@@ -137,6 +137,17 @@
     font-weight: 700;
     color: var(--secondary-color);
 }
+.order_details.order_details ul li p {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.order_details.order_details ul li p .points{
+    color: var(--primary-color);
+}
 
 .order_details ul li .total-price {
     padding-top: 10px;
