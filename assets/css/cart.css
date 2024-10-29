@@ -302,6 +302,47 @@
     align-items: center;
     margin: 5px 0;
 }
+.payment_method{
+    padding: 4px 10px;
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0 12px;
+}
+.payment_method input{
+    display: none;
+}
+.payment_method span{
+    width: 50%;
+}
+.payment_method label{
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--brand-color);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: var(--brand-color);
+    background-color: white;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.payment_method input[type="radio"]:checked + label{
+    background-color: var(--brand-color) !important;
+    color: white;
+}
 
 .statement_details .btn-close {
     font-size: 14px;
