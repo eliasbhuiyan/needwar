@@ -124,7 +124,7 @@
         display: none;
     }
     .header-logo{
-        width: 140px;
+        width: 120px;
     }
     .main_menu .category-btn span{
         display: none;
@@ -138,7 +138,7 @@
         gap: 10px;
     }
     .main_menu .category-btn .category-icon {
-        font-size: 18px;
+        font-size: 16px;
     }
     .main_menu .menu_list span,
     .main_menu .menu_list .signup{
@@ -286,9 +286,6 @@
     #header .header_top{
         display: none;
     }
-    .header-logo{
-        width: 140px;
-    }
     .main_menu .category-btn span{
         display: none;
     }
@@ -298,10 +295,7 @@
     }
     
     .main_menu .menu_list{
-        gap: 10px;
-    }
-    .main_menu .category-btn .category-icon {
-        font-size: 18px;
+        gap: 6px;
     }
     .main_menu .menu_list span,
     .main_menu .menu_list .signup{
