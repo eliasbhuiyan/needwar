@@ -144,15 +144,32 @@
     .main_menu .menu_list .signup{
         display: none;
     }
+    .search-container{
+        padding: 6px 0;
+    }
     .search-container svg{
         font-size: 20px;
     }
     .search-container .search-input{
       padding: 10px;
-      width: 260px !important;
+      width: 300px !important;
+    }
+    .search-input {
+        right: -100px;
+        top: 100%;
+        z-index: 9999;
     }
     .modal-header .modal-title{
         font-size: 14px;
+    }
+    .switch {
+        font-size: 8px;
+    }
+    .switch span{
+        padding: 5px;
+    }
+    .switch::before {
+        inset: var(--_switch-padding) 55% var(--_switch-padding) var(--_switch-padding);
     }
     /* Banner Css */
     #hero_banner{
@@ -299,10 +316,6 @@
     }
     .search-container svg{
         font-size: 20px;
-    }
-    .search-container .search-input{
-      padding: 10px;
-      width: 260px !important;
     }
     /* Banner Css */
     #hero_banner{

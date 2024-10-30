@@ -215,6 +215,7 @@ body {
 }
 .switch > span{
   padding: 10px;
+  display: block !important;
 }
 /* Language toggle switch */
 .switch {
