@@ -155,7 +155,7 @@
       width: 300px !important;
     }
     .search-input {
-        right: -100px;
+        right: -120px;
         top: 100%;
         z-index: 9999;
     }
