@@ -131,7 +131,7 @@
     }
     .menu_category_wraper .menu_category_list {
         left: auto;
-        right: -90px;
+        right: -110px;
     }
     
     .main_menu .menu_list{
@@ -289,11 +289,6 @@
     .main_menu .category-btn span{
         display: none;
     }
-    .menu_category_wraper .menu_category_list {
-        left: auto;
-        right: -90px;
-    }
-    
     .main_menu .menu_list{
         gap: 6px;
     }
